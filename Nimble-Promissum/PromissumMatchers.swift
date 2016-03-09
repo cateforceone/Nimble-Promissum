@@ -1,6 +1,9 @@
 import Promissum
 import Nimble
 
+/// Nimble matcher for checking whether a promise has been resolved with a value
+/// or not. This is often paired with `toEventually` in situations where the
+/// promise may be resolved at some point in the future.
 public func beResolved<T, U>() -> NonNilMatcherFunc<Promise<T, U>> {
     return promiseMatcher(postfixMessage: "be resolved", checker: { result in
         switch result {
@@ -10,6 +13,9 @@ public func beResolved<T, U>() -> NonNilMatcherFunc<Promise<T, U>> {
     })
 }
 
+/// Nimble matcher for checking whether a promise has been rejected with an error
+/// or not. This is often paired with `toEventually` in situations where the
+/// promise may be rejected at some point in the future.
 public func beRejected<T, U>() -> NonNilMatcherFunc<Promise<T, U>> {
     return promiseMatcher(postfixMessage: "be rejected", checker: { result in
         switch result {
@@ -19,6 +25,8 @@ public func beRejected<T, U>() -> NonNilMatcherFunc<Promise<T, U>> {
     })
 }
 
+/// Nimble matcher for checking whether a promise has neither been resolved
+/// nor rejected.
 public func bePending<T, U>() -> NonNilMatcherFunc<Promise<T, U>> {
     return promiseMatcher(postfixMessage: "be pending", checker: { result in
         switch result {
