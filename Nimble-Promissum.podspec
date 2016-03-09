@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Nimble-Promissum"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "Nimble matchers for Promissum promises"
   s.description  = <<-DESC
                    Nimble matchers for Promissum promises. These allow you to easily write expressive tests that produce useful failure messages when working with promises.
