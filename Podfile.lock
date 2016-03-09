@@ -1,0 +1,15 @@
+PODS:
+  - Nimble (3.1.0)
+  - Promissum (0.5.0):
+    - Promissum/Core (= 0.5.0)
+  - Promissum/Core (0.5.0)
+
+DEPENDENCIES:
+  - Nimble
+  - Promissum
+
+SPEC CHECKSUMS:
+  Nimble: 79d40f4d69d47314229bbabacaa02b8838c779b9
+  Promissum: 178ef117f446ed62e92e58cfbf8dd01bf543dad1
+
+COCOAPODS: 0.39.0
