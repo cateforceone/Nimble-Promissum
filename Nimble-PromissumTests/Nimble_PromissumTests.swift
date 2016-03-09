@@ -24,4 +24,20 @@ class Nimble_PromissumTests: XCTestCase {
         expect(self.resolvedPromise).toNot(bePending())
         expect(self.rejectedPromise).toNot(bePending())
     }
+
+    func testAsynchronousResolution() {
+        let source = PromiseSource<Int, NoError>()
+        dispatch_async(dispatch_get_main_queue()) { source.resolve(123) }
+
+        expect(source.promise).toEventually(beResolved())
+        expect(source.promise.value).to(equal(123))
+    }
+
+    func testAsynchronousRejection() {
+        let source = PromiseSource<Int, NSError>()
+        dispatch_async(dispatch_get_main_queue()) { source.reject(NSError(domain: "nmb", code: 0, userInfo: nil)) }
+
+        expect(source.promise).toEventually(beRejected())
+        expect(source.promise.error?.domain).to(equal("nmb"))
+    }
 }
