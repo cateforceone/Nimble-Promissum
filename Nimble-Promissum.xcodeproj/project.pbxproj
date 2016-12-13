@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3707905ADE33C5C1F90FF77E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F16B9F1ADB88D473B67E83 /* Pods.framework */; };
+		0F5BC671BD07B8E36255C443 /* Pods_Nimble_Promissum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC45B50A93FF1CF793DDDBC /* Pods_Nimble_Promissum.framework */; };
 		AE541B401C906A3900518289 /* Nimble-Promissum.h in Headers */ = {isa = PBXBuildFile; fileRef = AE541B3F1C906A3900518289 /* Nimble-Promissum.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE541B471C906A3900518289 /* Nimble_Promissum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE541B3D1C906A3900518289 /* Nimble_Promissum.framework */; };
 		AE541B4C1C906A3900518289 /* Nimble_PromissumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE541B4B1C906A3900518289 /* Nimble_PromissumTests.swift */; };
@@ -26,8 +26,7 @@
 
 /* Begin PBXFileReference section */
 		76F16B9F1ADB88D473B67E83 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FFF25EC9A97D8F15B1B6026 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		82896B401C02371603359703 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		93F55CBF01FB7C79BF56C12B /* Pods-Nimble-Promissum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nimble-Promissum.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nimble-Promissum/Pods-Nimble-Promissum.release.xcconfig"; sourceTree = "<group>"; };
 		AE541B3D1C906A3900518289 /* Nimble_Promissum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nimble_Promissum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE541B3F1C906A3900518289 /* Nimble-Promissum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nimble-Promissum.h"; sourceTree = "<group>"; };
 		AE541B411C906A3900518289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +34,8 @@
 		AE541B4B1C906A3900518289 /* Nimble_PromissumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nimble_PromissumTests.swift; sourceTree = "<group>"; };
 		AE541B4D1C906A3900518289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE541B541C906BEA00518289 /* PromissumMatchers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromissumMatchers.swift; sourceTree = "<group>"; };
+		ECC45B50A93FF1CF793DDDBC /* Pods_Nimble_Promissum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nimble_Promissum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED9336209545A3C847189EE8 /* Pods-Nimble-Promissum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nimble-Promissum.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nimble-Promissum/Pods-Nimble-Promissum.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3707905ADE33C5C1F90FF77E /* Pods.framework in Frameworks */,
+				0F5BC671BD07B8E36255C443 /* Pods_Nimble_Promissum.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,17 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				76F16B9F1ADB88D473B67E83 /* Pods.framework */,
+				ECC45B50A93FF1CF793DDDBC /* Pods_Nimble_Promissum.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6E1D9DC07E5019F6AEABB2BA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7FFF25EC9A97D8F15B1B6026 /* Pods.debug.xcconfig */,
-				82896B401C02371603359703 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		AE16AE841C6AA7460070578F = {
@@ -80,8 +73,8 @@
 				AE541B3E1C906A3900518289 /* Nimble-Promissum */,
 				AE541B4A1C906A3900518289 /* Nimble-PromissumTests */,
 				AE16AE8E1C6AA7460070578F /* Products */,
-				6E1D9DC07E5019F6AEABB2BA /* Pods */,
 				206FDB60F7B918B4B9ED5E4C /* Frameworks */,
+				CD79481B25A9607125ACDC99 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +106,15 @@
 			path = "Nimble-PromissumTests";
 			sourceTree = "<group>";
 		};
+		CD79481B25A9607125ACDC99 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED9336209545A3C847189EE8 /* Pods-Nimble-Promissum.debug.xcconfig */,
+				93F55CBF01FB7C79BF56C12B /* Pods-Nimble-Promissum.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -131,12 +133,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE541B4E1C906A3900518289 /* Build configuration list for PBXNativeTarget "Nimble-Promissum" */;
 			buildPhases = (
-				8A514B2AF35A06FF80D5F8D1 /* Check Pods Manifest.lock */,
+				6BA7D4E3B5A4629E4B0FF7EC /* [CP] Check Pods Manifest.lock */,
 				AE541B381C906A3900518289 /* Sources */,
 				AE541B391C906A3900518289 /* Frameworks */,
 				AE541B3A1C906A3900518289 /* Headers */,
 				AE541B3B1C906A3900518289 /* Resources */,
-				52AD911B94E19ECE1002F87D /* Copy Pods Resources */,
+				B8EE231E0C875EDD21F405C1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,9 +178,11 @@
 				TargetAttributes = {
 					AE541B3C1C906A3900518289 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0820;
 					};
 					AE541B451C906A3900518289 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -219,34 +223,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		52AD911B94E19ECE1002F87D /* Copy Pods Resources */ = {
+		6BA7D4E3B5A4629E4B0FF7EC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		8A514B2AF35A06FF80D5F8D1 /* Check Pods Manifest.lock */ = {
+		B8EE231E0C875EDD21F405C1 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nimble-Promissum/Pods-Nimble-Promissum-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -366,7 +370,7 @@
 		};
 		AE541B4F1C906A3900518289 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7FFF25EC9A97D8F15B1B6026 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = ED9336209545A3C847189EE8 /* Pods-Nimble-Promissum.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -381,6 +385,7 @@
 				PRODUCT_NAME = Nimble_Promissum;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -388,7 +393,7 @@
 		};
 		AE541B501C906A3900518289 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 82896B401C02371603359703 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 93F55CBF01FB7C79BF56C12B /* Pods-Nimble-Promissum.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -402,6 +407,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.briancroom.Nimble-Promissum";
 				PRODUCT_NAME = Nimble_Promissum;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -414,6 +420,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.briancroom.Nimble-PromissumTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -424,6 +431,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.briancroom.Nimble-PromissumTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

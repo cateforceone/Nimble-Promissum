@@ -1,4 +1,6 @@
 use_frameworks!
 
-pod 'Promissum'
-pod 'Nimble'
+target 'Nimble-Promissum' do
+  pod 'Promissum'
+  pod 'Nimble'
+end

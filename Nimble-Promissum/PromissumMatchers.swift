@@ -37,7 +37,7 @@ public func bePending<T, U>() -> NonNilMatcherFunc<Promise<T, U>> {
 }
 
 
-private func stringifyPromise<T, U>(promise: Promise<T, U>) -> String {
+private func stringifyPromise<T, U>(_ promise: Promise<T, U>) -> String {
     switch promise.result {
     case nil: return "<pending>"
     case let .Value(value)?: return "<resolved: \(value)>"
@@ -46,8 +46,8 @@ private func stringifyPromise<T, U>(promise: Promise<T, U>) -> String {
 }
 
 private func promiseMatcher<T, U>(
-    postfixMessage postfixMessage: String,
-    checker: Result<T, U>? -> Bool) -> NonNilMatcherFunc<Promise<T, U>> {
+    postfixMessage: String,
+    checker: (Result<T, U>?) -> Bool) -> NonNilMatcherFunc<Promise<T, U>> {
         return NonNilMatcherFunc { actualExpression, failureMessage in
             failureMessage.postfixMessage = postfixMessage
 

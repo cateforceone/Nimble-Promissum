@@ -1,0 +1,6 @@
+ pairs:
+       rc: Rebecca Chin; rchin@pivotal.io
+       sb: Suhail Bhat; suhail@vw-dilab.com
+email:
+        prefix: pair
+        domain: vw-dilab.com
