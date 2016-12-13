@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.source_files = "Nimble-Promissum/*.swift"
   s.requires_arc = true
   s.frameworks   = "Foundation", "XCTest"
-  s.dependency "Promissum", "~> 0.5.0"
+  s.dependency "Promissum", "~> 1.0.0"
   s.dependency "Nimble"
   s.dependency "Quick"
 end
