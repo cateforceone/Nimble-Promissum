@@ -1,16 +1,16 @@
 PODS:
-  - Nimble (3.1.0)
-  - Promissum (0.5.0):
-    - Promissum/Core (= 0.5.0)
-  - Promissum/Core (0.5.0)
+  - Nimble (5.1.1)
+  - Promissum (1.0.0):
+    - Promissum/Core (= 1.0.0)
+  - Promissum/Core (1.0.0)
 
 DEPENDENCIES:
   - Nimble
   - Promissum
 
 SPEC CHECKSUMS:
-  Nimble: 79d40f4d69d47314229bbabacaa02b8838c779b9
-  Promissum: 178ef117f446ed62e92e58cfbf8dd01bf543dad1
+  Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
+  Promissum: d1ef42a34fa40f119f011ed89e26234a2f6164c1
 
 PODFILE CHECKSUM: c9f70e51d19b63b7a6603cac608231431f407ce5
 
