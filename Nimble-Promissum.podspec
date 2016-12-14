@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "Brian Croom" => "brian.s.croom@gmail.com" }
   s.social_media_url = "http://twitter.com/aikoniv"
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios, "9.0"
   s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
   s.source       = { :git => "https://github.com/briancroom/Nimble-Promissum.git", :tag => s.version }
   s.source_files = "Nimble-Promissum/*.swift"

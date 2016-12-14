@@ -7,7 +7,7 @@ import Nimble
 public func beResolved<T, U>() -> NonNilMatcherFunc<Promise<T, U>> {
     return promiseMatcher(postfixMessage: "be resolved", checker: { result in
         switch result {
-        case .Value?: return true
+        case .value?: return true
         default: return false
         }
     })
@@ -19,7 +19,7 @@ public func beResolved<T, U>() -> NonNilMatcherFunc<Promise<T, U>> {
 public func beRejected<T, U>() -> NonNilMatcherFunc<Promise<T, U>> {
     return promiseMatcher(postfixMessage: "be rejected", checker: { result in
         switch result {
-        case .Error?: return true
+        case .error?: return true
         default: return false
         }
     })
@@ -40,14 +40,14 @@ public func bePending<T, U>() -> NonNilMatcherFunc<Promise<T, U>> {
 private func stringifyPromise<T, U>(_ promise: Promise<T, U>) -> String {
     switch promise.result {
     case nil: return "<pending>"
-    case let .Value(value)?: return "<resolved: \(value)>"
-    case let .Error(error)?: return "<rejected: \(error)>"
+    case let .value(value)?: return "<resolved: \(value)>"
+    case let .error(error)?: return "<rejected: \(error)>"
     }
 }
 
 private func promiseMatcher<T, U>(
     postfixMessage: String,
-    checker: (Result<T, U>?) -> Bool) -> NonNilMatcherFunc<Promise<T, U>> {
+    checker: @escaping (Result<T, U>?) -> Bool) -> NonNilMatcherFunc<Promise<T, U>> {
         return NonNilMatcherFunc { actualExpression, failureMessage in
             failureMessage.postfixMessage = postfixMessage
 
